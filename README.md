@@ -98,9 +98,14 @@ main.m
 
 ### Results ###
 
+#### Impact of Depth Boosting ####
 ![Results_Depth](./assets/Results_Depth.png)
 
+#### Results on the UIEB Dataset ####
+
 ![Results_UIEB](./assets/Results_UIEB.png)
+
+#### Impact of Photofinishing ####
 
 ![Results_PF](./assets/Results_PF.png)
 
