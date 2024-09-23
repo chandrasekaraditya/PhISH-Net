@@ -14,7 +14,7 @@ Create a conda environment with the following dependencies:
 conda create -n phishnet python=3.8
 conda activate phishnet
 conda install pytorch==1.12.1 torchvision==0.13.1 cudatoolkit=11.3 -c pytorch
-pip install opencv-python scikit-image tqdm rawpy Pillow==9.3.0 h5py==3.9.0 imageio==2.19.3 scikit-image==0.19.3
+pip install opencv-python scikit-image tqdm rawpy Pillow==9.3.0 h5py==3.9.0 imageio==2.19.3 scikit-image==0.19.3 matplotlib gdown
 ```
 
 ## Getting Started
@@ -30,7 +30,7 @@ In case you wish to only run inference, add the images to `./data/raw`.
 ```
 git clone https://github.com/compphoto/BoostingMonocularDepth.git
 
-wget https://sfu.ca/~yagiz/CVPR21/latest_net_G.pth
+!gdown https://drive.google.com/u/0/uc?id=1cU2y-kMbt0Sf00Ns4CN2oO9qPJ8BensP&export=download
 mkdir -p ./BoostingMonocularDepth/pix2pix/checkpoints/mergemodel/
 mv latest_net_G.pth ./BoostingMonocularDepth/pix2pix/checkpoints/mergemodel/
 
