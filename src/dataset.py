@@ -9,7 +9,7 @@ import numpy as np
 from load_raw import load_image
 
 class HDRDataset(Dataset):
-    def __init__(self, data_dir='PATH_TO_UIEB_OR_EUVP_DATASET_FOLDER', params=None, suffix='', aug=False, split='train'):
+    def __init__(self, data_dir='../data', params=None, suffix='', aug=False, split='train'):
         self.data_dir = data_dir
         self.suffix = suffix
         self.aug = aug

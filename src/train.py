@@ -141,7 +141,7 @@ def train(params=None):
 if __name__ == '__main__':
     import argparse
 
-    parser = argparse.ArgumentParser(description='HDRNet Inference')
+    parser = argparse.ArgumentParser(description='PhISHNet Training')
     parser.add_argument('--resume', type=bool, default=False, help='Continue training from latest checkpoint')
     parser.add_argument('--ckpt-path', type=str, default='./checkpoints', help='Model checkpoint path')
     parser.add_argument('--test-image', type=str,default='data/input/99_img_.png', dest="test_image", help='Test image path')
@@ -169,5 +169,3 @@ if __name__ == '__main__':
     print(params)
 
     train(params=params)
-
-# python train.py --epochs 2 --ckpt-path ../checkpoints/model_test

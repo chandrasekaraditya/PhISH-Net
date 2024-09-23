@@ -42,8 +42,3 @@ if __name__ == '__main__':
     print ("SSIM   : Mean: {:014.12f} std: {:.12f}".format(np.mean(overall_ssim), np.std(overall_ssim)))
     print ("UIQM   : Mean: {:014.12f} std: {:.12f}".format(np.mean(overall_uiqm), np.std(overall_uiqm)))
     print ("UCIQE  : Mean: {:014.12f} std: {:.12f}".format(np.mean(overall_uciqe), np.std(overall_uciqe)))
-
-# python evaluate.py --output-path /home/manogna/aditya/ViTMAE/hdrnet/datasets/real/test_outputs/out_model_1024 --reference-path /home/manogna/aditya/ViTMAE/hdrnet/datasets/real/gt
-
-# python evaluate.py --output-path /home/manogna/aditya/ViTMAE/final/temp_abcd --reference-path /home/manogna/aditya/ViTMAE/hdrnet/datasets/real/gt
-# python evaluate.py --output-path /home/manogna/aditya/ViTMAE/final/temp --reference-path /home/manogna/aditya/ViTMAE/hdrnet/datasets/real/gt

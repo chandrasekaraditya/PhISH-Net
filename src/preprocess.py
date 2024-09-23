@@ -37,7 +37,3 @@ if __name__ == '__main__':
             print(time.time() - t)
 
     print("Done!")
-
-# python preprocess.py --image-path /home/manogna/aditya/ViTMAE/hdrnet/datasets/degradation_test/raw/ --depthmap-path /home/manogna/aditya/ViTMAE/hdrnet/datasets/degradation_test/depth/ --output-path /home/manogna/aditya/ViTMAE/hdrnet/datasets/degradation_test/bsr/
-
-# python preprocess.py --image-path '../data/raw/' --depthmap-path '../data/depthmaps/' --output-path '../data/input/'

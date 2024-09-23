@@ -58,9 +58,3 @@ if __name__ == '__main__':
     args = vars(parser.parse_args())
 
     test(args['checkpoint'], args)
-
-
-# CUDA_VISIBLE_DEVICES=1 python test_hdr_depthv2.py --checkpoint /home/manogna/aditya/ViTMAE/hdrnet/checkpoints/hdr_depth_v2/ckpt_99_1399.pth --input /home/manogna/aditya/ViTMAE/hdrnet/datasets/degradation_test/bsr/ --output /home/manogna/aditya/ViTMAE/hdrnet/datasets/degradation_test/output/
-
-# CUDA_VISIBLE_DEVICES=1 python test.py --checkpoint /home/manogna/aditya/ViTMAE/final/checkpoints/hdr_depth_all_05_beta/ckpt_99_2799.pth --output /home/manogna/aditya/ViTMAE/final/temp_abcd/
-# CUDA_VISIBLE_DEVICES=1 python test.py --checkpoint /home/manogna/aditya/ViTMAE/final/checkpoints/hdr_depth_v2/ckpt_99_1399.pth --output /home/manogna/aditya/ViTMAE/final/temp/
