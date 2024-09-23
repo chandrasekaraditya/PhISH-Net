@@ -51,9 +51,9 @@ python run.py --Final --data_dir ../data/raw --output_dir ../data/depthmaps --de
 
 ### Usage ###
 
-#### Backscatter Removal ####
+#### Backscatter Estimation ####
 
-Start by generating the backscatter removed images using the `./src/preprocess.py` script.
+Start by generating the backscatter-removed images using the `./src/preprocess.py` script.
 
 ```
 cd src/
@@ -79,10 +79,18 @@ CUDA_VISIBLE_DEVICES=0 python train.py --epochs 2 --ckpt-path ../checkpoints/mod
 
 #### Test ####
 
-The pretrained PhISH-Net checkpoint can be found in `checkpoints/`.
+The pretrained PhISH-Net checkpoint can be found in `./checkpoints/`.
 
 ```
 CUDA_VISIBLE_DEVICES=0 python test.py --checkpoint ../checkpoints/PhISH-Net.pth --input ../data/input --output ../data/output
+```
+
+#### Photofinishing ####
+
+The MATLAB scripts for photofinishing are in `./src/pf`. To generate the results for custom images, change the `results_path` and `folder_path` variables in `main.m`. The outputs are saved to the `results_path`. Sample results can be found at `./src/pf/results`.
+
+```Matlab
+main.m
 ```
 
 ### Results ###
