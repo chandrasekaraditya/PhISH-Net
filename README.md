@@ -25,7 +25,7 @@ Start by downloading the desired dataset (such as [UIEB](https://li-chongyi.gith
 
 In case you wish to only run inference, add the images to `./data/raw`.
 
-**NOTE**: This model requires depth as an input. In this work, we use a depth boosting method to improve depth estimates from base models such as MiDaS and LeReS. To estimate depth using `BoostingMonocularDepth`, please follow the instructions [here](https://github.com/compphoto/BoostingMonocularDepth?tab=readme-ov-file#setup).
+**NOTE**: This model requires depth as an input. In this work, we use a depth boosting method to improve depth estimates from base models such as MiDaS and LeReS. To estimate depth using `BoostingMonocularDepth`, please follow the instructions below. For further information, refer to the [original repository](https://github.com/compphoto/BoostingMonocularDepth?tab=readme-ov-file#setup).
 
 ```
 git clone https://github.com/compphoto/BoostingMonocularDepth.git
