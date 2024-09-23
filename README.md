@@ -21,7 +21,9 @@ pip install opencv-python scikit-image tqdm rawpy Pillow==9.3.0 h5py==3.9.0 imag
 
 ### Setup ###
 
-Start by downloading the desired dataset (such as [UIEB](https://li-chongyi.github.io/proj_benchmark.html) or [EUVP](https://irvlab.cs.umn.edu/resources/euvp-dataset)) to `./data` with the original images in `./data/raw` and ground truths in `./data/gt`. Additionally, update the files in `./data/splits` with the names of the images in the train and test sets. In case of testing with a single image, add it to `./data/raw`.
+Start by downloading the desired dataset (such as [UIEB](https://li-chongyi.github.io/proj_benchmark.html) or [EUVP](https://irvlab.cs.umn.edu/resources/euvp-dataset)) to `./data` with the original images in `./data/raw` and ground truths in `./data/gt`. Additionally, update the files in `./data/splits` with the names of the images in the train and test sets.
+
+In case you wish to only run inference, add the images to `./data/raw`.
 
 **NOTE**: This model requires depth as an input. In this work, we use a depth boosting method to improve depth estimates from base models such as MiDaS and LeReS. To estimate depth using `BoostingMonocularDepth`, please follow the instructions [here](https://github.com/compphoto/BoostingMonocularDepth?tab=readme-ov-file#setup).
 
