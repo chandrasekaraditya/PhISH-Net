@@ -29,8 +29,8 @@ In case you wish to only run inference, add the images to `./data/raw`.
 
 ```
 git clone https://github.com/compphoto/BoostingMonocularDepth.git
-wget https://sfu.ca/~yagiz/CVPR21/latest_net_G.pth
 
+wget https://sfu.ca/~yagiz/CVPR21/latest_net_G.pth
 mkdir -p ./BoostingMonocularDepth/pix2pix/checkpoints/mergemodel/
 mv latest_net_G.pth ./BoostingMonocularDepth/pix2pix/checkpoints/mergemodel/
 
