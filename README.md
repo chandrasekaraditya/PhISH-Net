@@ -92,6 +92,7 @@ CUDA_VISIBLE_DEVICES=0 python test.py --checkpoint ../checkpoints/PhISH-Net.pth 
 The MATLAB scripts for photofinishing are in `./src/pf`. To generate the results for custom images, change the `results_path` and `folder_path` variables in `main.m`. The outputs are saved to the `results_path`. Sample results can be found at `./src/pf/results`.
 
 ```Matlab
+cd src/pf/
 main.m
 ```
 
